@@ -1,4 +1,4 @@
-package tests.utility;
+package com.libraryCT.utility;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;

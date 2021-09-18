@@ -1,4 +1,4 @@
-package tests;
+package com.libraryCT;
 
 public class file {
 }
