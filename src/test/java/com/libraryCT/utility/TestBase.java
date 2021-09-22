@@ -15,7 +15,7 @@ public class TestBase {
         driver = WebDriverFactory.getDriver("chrome"); // Change parameter to the browser you require
 
         // Implicit wait to wait for elements to be found on a loading page before throwing an error
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
     }
 
     @AfterEach

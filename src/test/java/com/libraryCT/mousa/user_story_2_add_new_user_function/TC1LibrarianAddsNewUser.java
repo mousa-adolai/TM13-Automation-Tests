@@ -39,7 +39,7 @@ public class TC1LibrarianAddsNewUser extends TestBase {
         driver.findElement(By.xpath("//*[@id=\"add_user_form\"]/div[1]/div/div[2]/div[1]/div/input")).sendKeys("Ilovecybertek");//password field
         int randomNum = (int)(Math.random()*1000+Math.random()*15);
         driver.findElement(By.xpath("//*[@id=\"add_user_form\"]/div[1]/div/div[2]/div[2]/div/input")).sendKeys("Ilovecybertek"+randomNum+"@cybertekschool.com");//first name field
-        //librarian submits add new user form
+        //librarian saves changes to add new user form
         driver.findElement(By.xpath("//*[@id=\"add_user_form\"]/div[2]/button[2]")).submit();//submit button
 
         //locate the most recently added user
