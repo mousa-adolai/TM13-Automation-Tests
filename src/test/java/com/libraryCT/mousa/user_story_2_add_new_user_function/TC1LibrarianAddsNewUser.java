@@ -7,7 +7,7 @@ import org.openqa.selenium.WebElement;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class T1LibrarianAddsNewUser extends TestBase {
+public class TC1LibrarianAddsNewUser extends TestBase {
     /*
     AC #1:
     Given librarian is on the home page
@@ -37,7 +37,8 @@ public class T1LibrarianAddsNewUser extends TestBase {
         //librarian fills out the add new user form
         driver.findElement(By.xpath("//*[@id=\"add_user_form\"]/div[1]/div/div[1]/div/div/input")).sendKeys("Rahel Legese");//full name field
         driver.findElement(By.xpath("//*[@id=\"add_user_form\"]/div[1]/div/div[2]/div[1]/div/input")).sendKeys("Ilovecybertek");//password field
-        driver.findElement(By.xpath("//*[@id=\"add_user_form\"]/div[1]/div/div[2]/div[2]/div/input")).sendKeys("Ilovecybertek@cybertekschool3.com");//first name field
+        int randomNum = (int)(Math.random()*1000+Math.random()*15);
+        driver.findElement(By.xpath("//*[@id=\"add_user_form\"]/div[1]/div/div[2]/div[2]/div/input")).sendKeys("Ilovecybertek"+randomNum+"@cybertekschool.com");//first name field
         //librarian submits add new user form
         driver.findElement(By.xpath("//*[@id=\"add_user_form\"]/div[2]/button[2]")).submit();//submit button
 
