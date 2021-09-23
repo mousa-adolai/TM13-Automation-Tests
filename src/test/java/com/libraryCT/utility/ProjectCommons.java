@@ -36,7 +36,7 @@ public class ProjectCommons {
 
     public static void waitFor(int seconds) {
         try {
-            Thread.sleep(seconds * 1000);
+            Thread.sleep((long) seconds * 1000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
