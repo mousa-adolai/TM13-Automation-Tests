@@ -1,5 +1,6 @@
 package com.libraryCT.edwin;
 
+import com.github.javafaker.Faker;
 import com.libraryCT.utility.ProjectCommons;
 import com.libraryCT.utility.TestBase;
 import org.junit.jupiter.api.BeforeEach;
@@ -40,11 +41,14 @@ public class LibrarianAddNewUserTest extends TestBase {
 
         WebElement addressInput = driver.findElement(By.cssSelector("#address"));
 
+        // Java Faker
+        Faker fake = new Faker();
+
         // Test data
-        String full_name = "Brandylee Money";
-        String password = "6mnjChKqfMxExJ";
-        String email = "brandyleemoney@library";
-        String address = "Agent Road 3115, Ubly, Benin, 411232";
+        String full_name = fake.name().fullName();
+        String password = fake.internet().password();
+        String email = full_name + "@library";
+        String address = fake.address().fullAddress();
 
         // Test data input
         addressInput.sendKeys(address);
