@@ -1,8 +1,9 @@
 package com.libraryCT.dilovarchik;
 
-import Utility.BrowserUtil;
-import Utility.TestBase;
+
 import static org.junit.jupiter.api.Assertions.*;
+
+import com.libraryCT.utility.TestBase;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -36,27 +37,27 @@ public class AddingNewUserByLibrarian extends TestBase {
         driver.findElement(By.xpath("//a[@class='btn btn-lg btn-outline btn-primary btn-sm']")).click();
 
         //TODO: When librarian enter full name, password, email and address(AC)
-        BrowserUtil.waitFor(1);
+        //BrowserUtil.waitFor(1);
         // locating full name input box
         WebElement fullName = driver.findElement(By.xpath("//input[@placeholder='Full Name']"));
         // entering full name
         fullName.sendKeys("Dilik Kh");
-        BrowserUtil.waitFor(1);
+        //BrowserUtil.waitFor(1);
         //locating password input box
         WebElement password = driver.findElement(By.xpath("//input[@placeholder='Password']"));
         //entering password
         password.sendKeys("Khomdidov@87");
-        BrowserUtil.waitFor(1);
+        //BrowserUtil.waitFor(1);
         // locating email input box
         WebElement email = driver.findElement(By.xpath("//input[@name='email']"));
         //entering email
         email.sendKeys("khomidov1@gmail.com");
-        BrowserUtil.waitFor(1);
+        //BrowserUtil.waitFor(1);
         // locating address input box
         WebElement address = driver.findElement(By.xpath("//textarea[@id='address']"));
         // entering address
         address.sendKeys("268 Parlin ST, Dover,DE");
-        BrowserUtil.waitFor(2);
+        //BrowserUtil.waitFor(2);
 
         //TODO: And librarian click save changes (AC)
         //locating save changes and click it

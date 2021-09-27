@@ -1,7 +1,8 @@
 package com.libraryCT.dilovarchik;
 
-import Utility.HomePage;
-import Utility.TestBase;
+
+import com.libraryCT.utility.HomePage;
+import com.libraryCT.utility.TestBase;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;

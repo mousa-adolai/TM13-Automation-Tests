@@ -1,9 +1,7 @@
 package com.libraryCT.dilovarchik;
 
-import Utility.BrowserUtil;
-import Utility.HomePage;
-import Utility.TestBase;
-import org.junit.Test;
+import com.libraryCT.utility.HomePage;
+import com.libraryCT.utility.TestBase;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -64,7 +62,7 @@ public class AddingNewBookByLibrarian extends TestBase {
         // verifying if the text message has been displayed
         assertTrue(newUser.isDisplayed());
 
-        BrowserUtil.waitFor(3);
+        //BrowserUtil.waitFor(3);
 
 
 

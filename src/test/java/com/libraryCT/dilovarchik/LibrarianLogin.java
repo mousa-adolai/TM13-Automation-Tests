@@ -1,15 +1,15 @@
 package com.libraryCT.dilovarchik;
 
 
-import Utility.TestBase2;
 import static org.junit.jupiter.api.Assertions.*;
 
 
+import com.libraryCT.utility.TestBase;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 
 
-public class LibrarianLogin extends TestBase2 {
+public class LibrarianLogin extends TestBase {
 
 
     @Test //calls the Test interface

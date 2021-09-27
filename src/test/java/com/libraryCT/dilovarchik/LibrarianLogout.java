@@ -1,7 +1,8 @@
 package com.libraryCT.dilovarchik;
 
-import Utility.HomePage;
-import Utility.TestBase;
+
+import com.libraryCT.utility.HomePage;
+import com.libraryCT.utility.TestBase;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 
@@ -19,7 +20,7 @@ public class LibrarianLogout extends TestBase {
 
         // locate username on the top right and click
         driver.findElement(By.id("navbarDropdown")).click();
-        BrowserUtil.waitFor(2);
+        //BrowserUtil.waitFor(2);
         //TODO: And user click Log Out
         //locate log out and click
         driver.findElement(By.xpath("//a[@class='dropdown-item']")).click();

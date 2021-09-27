@@ -1,12 +1,14 @@
 package com.libraryCT.dilovarchik;
 
-import Utility.TestBase2;
+
 import static org.junit.jupiter.api.Assertions.*;
+
+import com.libraryCT.utility.TestBase;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
-public class LoginWithInvalidCredentials extends TestBase2 {
+public class LoginWithInvalidCredentials extends TestBase {
 
     @Test
     public void loginPage(){
@@ -30,7 +32,7 @@ public class LoginWithInvalidCredentials extends TestBase2 {
         //TODO:And student click sign in button (AC)
         driver.findElement(By.xpath("//button[@type='submit']")).submit();
 
-        BrowserUtil.waitFor(2);
+        //BrowserUtil.waitFor(2);
 
         //TODO:Then verify the error message “Sorry, Wrong Email or Password” ** (AC)
 
