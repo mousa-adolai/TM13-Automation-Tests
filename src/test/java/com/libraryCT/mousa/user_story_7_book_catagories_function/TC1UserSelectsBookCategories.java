@@ -1,4 +1,4 @@
-package com.libraryCT.mousa.user_story_5_selecting_user_groups;
+package com.libraryCT.mousa.user_story_7_book_catagories_function;
 
 import com.libraryCT.utility.TestBase;
 import org.junit.jupiter.api.Test;
@@ -9,10 +9,11 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class TC1LibrarianSelectsUsers extends TestBase {
+
+public class TC1UserSelectsBookCategories extends TestBase {
 
     @Test
-    public void librarianSelectsUsers(){
+    public void verify21BookCategories(){
         //go to QA env
         driver.get("https://library2.cybertekschool.com/");
         //locate and send valid email to email input bar
@@ -21,10 +22,13 @@ public class TC1LibrarianSelectsUsers extends TestBase {
         driver.findElement(By.xpath("//*[@id=\"inputPassword\"]")).sendKeys("Sdet2022*");
         //press sign in button
         driver.findElement(By.cssSelector("button.btn.btn-lg.btn-primary.btn-block")).click();
+        //sign in complete, librarian is on homepage
 
-        //librarian clicks users module
-        driver.findElement(By.linkText("Users")).click();
-        List<WebElement> list = driver.findElements(By.cssSelector("select#user_groups>option"));
-        assertEquals(3,list.size());
+        //librarian clicks books module
+        driver.findElement(By.linkText("Books")).click();
+
+        List<WebElement> list = driver.findElements(By.cssSelector("select#book_categories>option"));
+        assertEquals(21, list.size());
+
     }
 }

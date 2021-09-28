@@ -3,10 +3,8 @@ package com.libraryCT.mousa.user_story_3_add_new_book_function;
 import com.libraryCT.utility.TestBase;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class TC1LibrarianAddsNewBook extends TestBase {
     /*
